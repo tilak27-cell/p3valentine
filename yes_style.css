@@ -4,21 +4,70 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f9e3e3;
-    font-family: 'Arial', sans-serif;
-}
+    background-color: #fff5f8;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+  }
 
 .container {
     text-align: center;
 }
 
 .header_text {
-    font-size: 3em;
-    color: #d32f2f;
+    color: #ff4d6d; /* Romantic pinkish-red */
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px rgba(255, 0, 85, 0.2);
+    animation: heartbeat 1.5s infinite;
 }
 
-.gif_container img {
-    width: 100%; 
-    max-width: 500px; 
-    height: auto; 
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
+
+.gif_container {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Floating Hearts */
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff4d6d;
+  transform: rotate(-45deg);
+  animation: floating-hearts 4s infinite linear;
+}
+
+/* Creating the Heart Shape */
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff4d6d;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 10px;
+}
+
+/* Floating Animation */
+@keyframes floating-hearts {
+  0% { transform: translateY(0px) rotate(-45deg); opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { transform: translateY(-100vh) rotate(-45deg); opacity: 0; }
+}
+

@@ -54,16 +54,16 @@
 })();
 */
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
+    "ano teh?",
+    "bilis na teh",
+    "ngayon lang to ",
+    "pindutin mo na yung yes 
+    "50 pesos ha !",
+    "di ka ba naawa sakin ",
+    "wala nakong pera :(",
+    "nakakainis kana ha ...",
+    "libre mo nako ples",
+    " ayyy madamot"
 ];
 
 let messageIndex = 0;
